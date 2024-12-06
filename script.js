@@ -1,6 +1,6 @@
 'use strict';
 // start with secert number find it 
-let secretNumber = Math.trunc(Math.random() * 20 + 1);
+let secretNumber = Math.trunc(Math.random() * 50 + 1);
 const secretNum = document.querySelector('.number');
 const message = document.querySelector('.message');
 const scorecurrent = document.querySelector('.score');
@@ -8,7 +8,7 @@ const highscore = document.querySelector('.highscore');
 const body = document.querySelector('body');
 const guess = document.querySelector('.guess');
 secretNum.textContent = "?";
-let score = 20;
+let score = 50;
 let hscore = 0; //store the highscore so that it persist;
 
 // Intiating the click event for the button Check
@@ -63,10 +63,10 @@ document.querySelector('.check').addEventListener
 document.querySelector('.again').addEventListener
 ('click', function(){
     // score should be 20, message be Start Guessing, change the secret number
-    score = 20
+    score = 50
     scorecurrent.textContent = score;
     message.textContent = "Start Guessing ....";
-    secretNumber = Math.trunc(Math.random() * 20 + 1);
+    secretNumber = Math.trunc(Math.random() * 50 + 1);
     secretNum.textContent = '?';
     body.style.backgroundColor = '#073b13';
     secretNum.style.width = '15rem';
